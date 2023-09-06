@@ -3,10 +3,10 @@ public class Main {
         Calculator calc = Calculator.instance.get();
 
         int a = calc.plus.apply(1, 2);
-        int b = calc.minus.apply(2, 1);
+        int b = calc.minus.apply(2, 2);
         int c = calc.devide.apply(a, b);
         /**Деление на ноль (Арифметическая ошибка) в devide, так как в переменную b изначально присваивалось значение 0.
-         Заменил передаваемые параметры, получил 1.*/
+         Добавил тернарный оператор для проверки передаваемых параметров на 0.*/
 
         int d = calc.multiply.apply(2, 2);
         int e = calc.pow.apply(3);
